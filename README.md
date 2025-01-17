@@ -1,4 +1,4 @@
-# React To-Do App with Persistent Storage
+# React To-Do App
 
 This is a simple and intuitive To-Do List web application built using React.js. The app allows users to:
 
