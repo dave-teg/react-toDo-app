@@ -1,13 +1,150 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: calc(100% - 1rem);
+  max-width: 600px;
+  margin: 0.5rem auto 0;
+  height: calc(100vh - 0.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid mediumblue;
+  border-radius: 0.25rem;
 }
+
+header,
+footer {
+  width: 100%;
+  padding: 0.25rem;
+  text-align: center;
+  background-color: mediumblue;
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.item {
+  background-color: #ededed;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.item input {
+  min-width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  accent-color: royalblue;
+  cursor: pointer;
+}
+
+
+.item label {
+  flex-grow: 1;
+}
+
+.item svg {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  color: royalblue;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.item svg:hover,
+.item svg:focus {
+  color: red;
+}
+
+.addForm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.offscreen {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  border: 2px solid #615c5c;
+  outline: none;
+}
+
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+}
+
+button:focus, 
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
+
+.searchForm {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+}
+
+.searchForm input {
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  font-size: 1rem;
+  min-height: 2rem;
+  border: 2px solid #615c5c;
+  outline: none;
+}
+
+
+
